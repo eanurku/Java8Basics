@@ -22,8 +22,7 @@ interface FourWheelars{
     }
 }
 
-class Cars implements Vehicles,FourWheelar{
-
+class Cars implements Vehicles,FourWheelars {
 
     @Override
     public void print() {
