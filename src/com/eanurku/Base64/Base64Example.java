@@ -6,7 +6,7 @@ import java.util.Base64;
 public class Base64Example {
     public static void main(String[] args) throws UnsupportedEncodingException {
 
-        String string="anurag?kumar";
+        String string="abc?xyz";
 
         String basicEncodedstring = Base64.getEncoder().encodeToString(string.getBytes("utf-8"));
         System.out.println(basicEncodedstring);
