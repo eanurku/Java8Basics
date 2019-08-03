@@ -19,7 +19,7 @@ class test{
     }
 }
 
-public class lambdaExamples {
+public class lambdaBasics {
 
 
     public static void main(String[] args) {

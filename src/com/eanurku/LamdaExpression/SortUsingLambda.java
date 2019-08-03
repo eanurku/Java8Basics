@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-public class SortUsingJava8 {
+public class SortUsingLambda {
 
     public static void main(String[] args) {
 
@@ -18,6 +18,7 @@ public class SortUsingJava8 {
         listJav7.add("sonam");
         listJav7.add("gonu");
         listJav7.add("sonu");
+
         List<String> listJav8 = new ArrayList<>();
         listJav8.add("anurag");
         listJav8.add("monu");
@@ -31,8 +32,15 @@ public class SortUsingJava8 {
                 return s.compareTo(t1);
             }
         });
+
+        //java 8 Lambda based sorting
+        Comparator<String>  comp = (a, b) -> a.compareTo(b);
+
+        Collections.sort(listJav8,comp);
+
         Collections.sort(listJav8,(s, t) -> s.compareTo(t));
 
+        //
         System.out.println(listJav7);
         System.out.println(listJav8);
 

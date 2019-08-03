@@ -42,16 +42,20 @@ class NewCars implements Vehicles,FourWheelars{
         Vehicles.super.print();
     }
 }
-public class MultipleDefaults {
+public class DefaultMethodsConflictResolution {
     public static void main(String[] args) {
 
         Cars car=new Cars();
         car.print();
+        System.out.println();
+        
 
         NewCars newcar=new NewCars();
         newcar.print();
+        System.out.println();
 
         newcar.mymethod();
+        System.out.println();
 
         Vehicles.applyBreak();
         FourWheelars.applybreak();
