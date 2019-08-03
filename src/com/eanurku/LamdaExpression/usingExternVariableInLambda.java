@@ -19,3 +19,5 @@ public class usingExternVariableInLambda {
 
     }
 }
+//output
+//anurag :anu abc
