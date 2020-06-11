@@ -40,6 +40,7 @@ public class lambdaBasics {
         System.out.println("add:" +test.operate(2,3,add));
         System.out.println("add:" +test.operate(2,3,multiply));
         System.out.println("add:" +test.operate(-12,3,conddiv));
+
         test.greetSomeone("anurag",greet);
 
         greet.sayHello("hi bro");
