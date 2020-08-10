@@ -28,8 +28,8 @@ public class SortUsingLambda {
 
         Collections.sort(listJav7, new Comparator<String>() {
             @Override
-            public int compare(String s, String t1) {
-                return s.compareTo(t1);
+            public int compare(String s, String t) {
+                return s.compareTo(t);
             }
         });
 
