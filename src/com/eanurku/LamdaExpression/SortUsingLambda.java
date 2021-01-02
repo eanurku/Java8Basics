@@ -9,9 +9,6 @@ public class SortUsingLambda {
 
     public static void main(String[] args) {
 
-        System.out.println("welcome to java 8");
-
-
         List<String> listJav7 = new ArrayList<>();
         listJav7.add("anurag");
         listJav7.add("monu");

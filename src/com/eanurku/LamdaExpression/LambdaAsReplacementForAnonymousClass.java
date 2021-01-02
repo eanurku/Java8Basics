@@ -5,19 +5,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class LambdaAsReplacementForAnonymusClass {
-
+public class LambdaAsReplacementForAnonymousClass {
 
     public static void main(String[] args) {
-
-
 
         List<String> list=new ArrayList<>();
         list.add("monu");
         list.add("sonu");
         list.add("anu");
 
-        //without lambda
+        //before lambda
         list.forEach(new Consumer<String>() {
             @Override
             public void accept(String s) {
@@ -26,8 +23,9 @@ public class LambdaAsReplacementForAnonymusClass {
         });
         System.out.println();
 
-        //After using lambda
+        //After  lambda
         list.forEach(s-> System.out.println(s));
+        list.forEach(System.out::println);
 
     }
 }
